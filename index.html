@@ -6,6 +6,7 @@
     <meta name="author" content="Milo Wearn">
     <title>Bear Ninja Hunter</title>
     <!--<link href="style.css" rel="stylesheet" type="text/css">-->
+</head>
     <body>
         <p id="a1">...</p>
         <p id="a2">...</p>
@@ -13,11 +14,10 @@
         <script>
             // bot hardcoded for now
             let computerType = "Bear";
+            // input
             let userName = prompt('Welcome to Bear Hunter Ninja! Please enter your name to get started: ');
             alert(`Hi ${userName}! Let's play!`);
             let userType = prompt('Who are you: Bear, Ninja, or Hunter?');
-            document.getElementById("a1").innerHTML = (userName + ', you picked ' + userType + '!');
-            document.getElementById("a2").innerHTML = ('The computer picked Bear!');
             
             // win logic
             let winner = "";
@@ -40,11 +40,11 @@
             }
             
             // console logs
-            console.log(userName + ', you picked ' + userType + '!');
-            console.log('The computer picked ' + computerType + '!');
+            console.log(userName + ', you chose ' + userType + '!');
+            console.log('The computer chose ' + computerType + '!');
             // changes the content in the page
-            document.getElementById("a1").innerHTML = (userName + ', you picked ' + userType + '!');
-            document.getElementById("a2").innerHTML = ('The computer picked ' + computerType + '!');
+            document.getElementById("a1").innerHTML = (userName + ', you chose ' + userType + '!');
+            document.getElementById("a2").innerHTML = ('The computer chose ' + computerType + '!');
             switch (winner) {
                 case 'tie':
                     console.log("It's a tie!");
@@ -62,5 +62,5 @@
          </script>
          
      </body>
-</head>
+</body>
 </html>
